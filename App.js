@@ -16,6 +16,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {StyleSheet, useColorScheme} from 'react-native';
 import InfoPage from './InfoPage';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import SpecialInfo from './SpecialInfo'
 
 export default function App({navigation}) {
   return (
@@ -38,6 +39,7 @@ function RootNavigator({navigation}) {
       <Stack.Group screenOptions={{presentation: 'modal'}}>
         <Stack.Screen name="webpage" component={Webpage} />
         <Stack.Screen name="infopage" component={InfoPage} />
+        <Stack.Screen name="specialinfo" component={SpecialInfo} />
       </Stack.Group>
     </Stack.Navigator>
   );
